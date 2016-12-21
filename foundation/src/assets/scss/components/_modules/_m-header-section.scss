@@ -1,0 +1,19 @@
+// Config
+
+// Base
+.m-header {
+  background: url(../img/hero.jpg) top left no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  @include aspect-ratio(72, 35);
+}
+
+.m-top-bar {
+  position: absolute;
+  top: 0;
+}
+
+.m-title-section {
+  position: absolute;
+  top: 0;
+}

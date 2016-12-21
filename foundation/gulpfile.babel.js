@@ -9,8 +9,7 @@ import rimraf   from 'rimraf';
 import sherpa   from 'style-sherpa';
 import yaml     from 'js-yaml';
 import fs       from 'fs';
-import postcss  from 'gulp-postcss';
-import lost     from 'lost';
+
 
 // Load all Gulp plugins into one variable
 const $ = plugins();
@@ -86,9 +85,6 @@ function sass() {
     .pipe($.autoprefixer({
       browsers: COMPATIBILITY
     }))
-    .pipe($.postcss([
-      lost()
-    ]))
     // Comment in the pipe below to run UnCSS in production
     //.pipe($.if(PRODUCTION, $.uncss(UNCSS_OPTIONS)))
     .pipe($.if(PRODUCTION, $.cssnano()))
