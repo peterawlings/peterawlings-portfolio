@@ -1,0 +1,13 @@
+// Config
+
+// Base
+.m-client-logos {
+  @include flex-grid-row(nest);
+  align-items: center;
+  &__container {
+    @include flex-grid-column();
+    min-width: 130px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}

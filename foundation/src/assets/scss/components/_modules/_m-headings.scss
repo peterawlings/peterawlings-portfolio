@@ -1,6 +1,49 @@
 // Config
+h4, .h4  {
+  font-weight: normal;
+}
 
 // Base
-.m-title-section {
+%section-title {
+  font-size: rem-calc($h1-fontsize-larger);
+  line-height: 1;
+  margin-bottom: 7px;
+}
 
+
+.m-tagline {
+  &__sub {
+    &:after {
+      @include separator($width: 210px, $dist: 0);
+    }
+  }
+}
+
+.m-section__title {
+  @extend %section-title;
+  text-align: center;
+}
+
+.m-section__subtitle {
+  font-size: rem-calc($h4-fontsize);
+  text-align: center;
+  &:after {
+    @include separator();
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.m-header-section__title {
+  @extend %section-title;
+  color: $white;
+  margin-bottom: 11px;
+}
+.m-header-section__subtitle {
+  font-size: rem-calc($h3-fontsize);
+  font-weight: normal;
+  color: $white;
+  &:after {
+    @include separator($primary-color, 75px);
+  }
 }

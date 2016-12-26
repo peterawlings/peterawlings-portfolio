@@ -1,0 +1,28 @@
+// Config
+
+// placeholders
+%section {
+  padding: 50px 0;
+  @include breakpoint(medium) {
+    padding: 150px 0;
+  }
+}
+
+.row {
+  max-width: 75rem;
+}
+//
+// .section-inner {
+//
+// }
+
+// Base
+
+.l-section {
+  @extend %section;
+}
+
+.l-section--alt {
+  @extend %section;
+  background-color: $light-gray;
+}
