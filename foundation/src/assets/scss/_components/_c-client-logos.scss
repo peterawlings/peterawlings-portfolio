@@ -11,3 +11,8 @@
     margin-bottom: 10px;
   }
 }
+
+.m-description {
+  font-size: rem-calc($h3-fontsize-larger);
+  margin-bottom: rem-calc(95px);
+}

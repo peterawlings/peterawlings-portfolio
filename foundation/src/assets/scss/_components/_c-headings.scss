@@ -11,7 +11,8 @@ h4, .h4  {
 }
 
 
-.m-tagline {
+.c-tagline {
+  margin-bottom: 5.5rem;
   &__sub {
     &:after {
       @include separator($width: 210px, $dist: 0);
@@ -19,13 +20,14 @@ h4, .h4  {
   }
 }
 
-.m-section__title {
+.c-section__title {
   @extend %section-title;
   text-align: center;
 }
 
-.m-section__subtitle {
+.c-section__subtitle {
   font-size: rem-calc($h4-fontsize);
+  margin-bottom: $global-margin-larger;
   text-align: center;
   &:after {
     @include separator();
@@ -34,12 +36,12 @@ h4, .h4  {
   }
 }
 
-.m-header-section__title {
+.c-header-section__title {
   @extend %section-title;
   color: $white;
   margin-bottom: 11px;
 }
-.m-header-section__subtitle {
+.c-header-section__subtitle {
   font-size: rem-calc($h3-fontsize);
   font-weight: normal;
   color: $white;

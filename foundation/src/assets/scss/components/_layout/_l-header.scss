@@ -1,7 +1,7 @@
 // Config
 
 // Base
-.m-header {
+.c-header {
   @include aspect-ratio(72, 35);
   background: url(../img/hero.jpg) top left no-repeat;
   background-size: cover;
@@ -13,7 +13,7 @@
   }
 }
 
-.m-top-bar {
+.c-top-bar {
   position: absolute;
   top: 0;
   left: 0;
@@ -22,13 +22,13 @@
   padding: 20px 30px;
 }
 
-.m-logo {
+.c-logo {
   color: $primary-color;
   font-family: 'impact', sans-serif;
   text-transform: uppercase;
 }
 
-.m-title-section {
+.c-title-section {
   margin-top: 130px;
   margin-left: 30px;
   @include breakpoint(medium) {

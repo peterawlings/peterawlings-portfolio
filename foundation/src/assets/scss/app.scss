@@ -4,8 +4,8 @@
 @import 'foundation';
 // @import 'motion-ui';
 //
-@import 'components/_base/_b-mixin-overrides';
-@import 'components/_base/_b-mixins-custom';
+@import '_vendor-extensions/_foundation-mixin-overrides';
+@import '_abstract/_b-mixins-custom';
 @include foundation-global-styles;
 // // @include foundation-grid;
 
@@ -22,7 +22,7 @@
 // // @include foundation-breadcrumbs;
 // @include foundation-button-group;
 // @include foundation-callout;
-// // @include foundation-card;
+// // @include foundation-card;gulp
 // @include foundation-close-button;
 // @include foundation-menu;
 // @include foundation-menu-icon;
@@ -57,7 +57,7 @@
 
 // base
 
-@import 'components/_layout/_l-site-section';
-@import 'components/_modules/_m-header-section';
-@import 'components/_modules/_m-headings';
-@import 'components/_modules/_m-client-logos';
+@import '_layout/_l-site-section';
+@import '_layout/_l-header';
+@import '_components/_c-headings';
+@import '_components/_c-client-logos';
