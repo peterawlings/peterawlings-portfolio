@@ -22,7 +22,7 @@
 // // @include foundation-breadcrumbs;
 // @include foundation-button-group;
 // @include foundation-callout;
-// // @include foundation-card;gulp
+// // @include foundation-card;
 // @include foundation-close-button;
 // @include foundation-menu;
 // @include foundation-menu-icon;
@@ -59,5 +59,6 @@
 
 @import '_layout/_l-site-section';
 @import '_layout/_l-header';
+@import '_layout/_l-work-example';
 @import '_components/_c-headings';
 @import '_components/_c-client-logos';

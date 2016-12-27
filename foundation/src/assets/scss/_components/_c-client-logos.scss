@@ -1,7 +1,7 @@
 // Config
 
 // Base
-.m-client-logos {
+.c-client-logos {
   @include flex-grid-row(nest);
   align-items: center;
   &__container {
@@ -12,7 +12,7 @@
   }
 }
 
-.m-description {
+.c-description {
   font-size: rem-calc($h3-fontsize-larger);
   margin-bottom: rem-calc(95px);
 }

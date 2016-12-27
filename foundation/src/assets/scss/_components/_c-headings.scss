@@ -23,16 +23,31 @@ h4, .h4  {
 .c-section__title {
   @extend %section-title;
   text-align: center;
+  &.has-alt-align {
+    @include breakpoint(medium) {
+      text-align: left;
+    }
+  }
 }
 
 .c-section__subtitle {
   font-size: rem-calc($h4-fontsize);
-  margin-bottom: $global-margin-larger;
   text-align: center;
   &:after {
     @include separator();
     margin-left: auto;
     margin-right: auto;
+  }
+  &.has-alt-align {
+    @include breakpoint(medium) {
+      text-align: left;
+      &:after {
+        margin-left: 0;
+      }
+    }
+  }
+  &.is-section-heading {
+    margin-bottom: $global-margin-larger;
   }
 }
 
