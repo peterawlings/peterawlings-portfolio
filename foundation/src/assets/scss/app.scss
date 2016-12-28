@@ -48,7 +48,7 @@
 // // @include foundation-title-bar;
 // // @include foundation-tooltip;
 // // @include foundation-top-bar;
-// @include foundation-visibility-classes;
+@include foundation-visibility-classes;
 // @include foundation-float-classes;
 // @include foundation-flex-classes;
 //
@@ -59,6 +59,6 @@
 
 @import '_layout/_l-site-section';
 @import '_layout/_l-header';
-@import '_layout/_l-work-example';
+@import '_layout/_l-portfolio-piece';
 @import '_components/_c-headings';
 @import '_components/_c-client-logos';

@@ -5,14 +5,27 @@
   @include flex-grid-row(nest);
   align-items: center;
   &__container {
-    @include flex-grid-column();
-    min-width: 130px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    @include flex-grid-column(shrink);
+    min-width: 160px;
+    margin: 10px auto;
+    @include breakpoint(medium) {
+      &:first-child {
+        margin-left: 0;
+      }
+    }
   }
 }
 
 .c-description {
-  font-size: rem-calc($h3-fontsize-larger);
-  margin-bottom: rem-calc(95px);
+  font-size: rem-calc(18);
+  margin-bottom: rem-calc(55px);
+  @include breakpoint(medium) {
+    margin-bottom: rem-calc(65px);
+    font-size: rem-calc($h3-fontsize-larger);
+  }
+  @include breakpoint(large) {
+    margin-bottom: rem-calc(95px);
+    font-size: rem-calc($h3-fontsize-larger);
+  }
+
 }

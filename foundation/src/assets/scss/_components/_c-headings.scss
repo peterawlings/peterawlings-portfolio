@@ -10,13 +10,15 @@ h4, .h4  {
   margin-bottom: 7px;
 }
 
-
 .c-tagline {
-  margin-bottom: 5.5rem;
+  margin-bottom: rem-calc(56);
+  @include breakpoint(large) {
+    margin-bottom: rem-calc(88);
+  }
   &__sub {
-    &:after {
-      @include separator($width: 210px, $dist: 0);
-    }
+    border-bottom: 4px solid;
+    display: inline-block;
+    padding-bottom: 3px;
   }
 }
 

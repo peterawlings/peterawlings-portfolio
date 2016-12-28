@@ -7,6 +7,19 @@
   margin-top: $dist;
 }
 
+// Adds functionality for stacking the columns and making each one full width
+@mixin flex-grid-column-extend($fullwidth: false) {
+    @if $fullwidth == fullwidth {
+      flex: 1 1 auto;
+      max-width: 100%;
+    }
+    @else {
+      flex: 1 1 0;
+    }
+}
+
+
+
 @mixin flex-grid-row(
   $behavior: null,
   $size: $grid-row-width,
@@ -29,7 +42,7 @@
 
   // added
   @else if index($behavior, collapse) != null {
-    > .columns {
+    > .column {
       @include grid-col-collapse;
     }
   }
@@ -52,3 +65,43 @@
     }
   }
 }
+
+// @mixin flex-grid-column(
+//   $columns: expand,
+//   $gutters: $grid-column-gutter
+// ) {
+//   // Base properties
+//   @include flex-grid-size($columns);
+//
+//   // Gutters
+//   @include grid-column-gutter($gutters: $gutters);
+//
+//   // fixes recent Chrome version not limiting child width
+//   // https://stackoverflow.com/questions/34934586/white-space-nowrap-and-flexbox-did-not-work-in-chrome
+//   @if $columns == expand {
+//     min-width: initial;
+//   }
+//   @if $columns == fullwidth {
+//     flex: 1 1 100%;
+//   }
+//   // max-width fixes IE 10/11 not respecting the flex-basis property
+//   @if $columns != expand and $columns != shrink {
+//     max-width: grid-column($columns);
+//   }
+// }
+
+// @function flex-grid-column($columns: expand) {
+//   $flex: 1 1 0px; // sass-lint:disable-line zero-unit
+//
+//   @if $columns == shrink {
+//     $flex: 0 0 auto;
+//   }
+//   // @if $columns == fullwidth {
+//   //   $flex: 0 0 100;
+//   // }
+//   @else if $columns != expand {
+//     $flex: 0 0 grid-column($columns);
+//   }
+//
+//   @return $flex;
+// }

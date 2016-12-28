@@ -1,0 +1,18 @@
+// Config
+
+// Base
+.l-portfolio-piece {
+  @include flex-grid-row(collapse, $wrap: true);
+  &__img,
+  &__content {
+    @include flex-grid-column;
+    @include flex-grid-column-extend(fullwidth);
+    // @include grid-col-collapse;
+    @include breakpoint(medium) {
+      @include flex-grid-column-extend();
+      // flex: 1 1 auto;
+    //   @include flex-grid-column();
+    //   align-self: center;
+    }
+  }
+}
