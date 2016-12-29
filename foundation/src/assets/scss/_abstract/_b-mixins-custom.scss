@@ -8,15 +8,15 @@
 }
 
 // Adds functionality for stacking the columns and making each one full width
-@mixin flex-grid-column-extend($fullwidth: false) {
-    @if $fullwidth == fullwidth {
-      flex: 1 1 auto;
-      max-width: 100%;
-    }
-    @else {
-      flex: 1 1 0;
-    }
-}
+// @mixin flex-grid-column-extend($fullwidth: false) {
+//     @if $fullwidth == fullwidth {
+//       flex: 1 1 auto;
+//       max-width: 100%;
+//     }
+//     @else {
+//       flex: 1 1 0;
+//     }
+// }
 
 
 

@@ -26,7 +26,7 @@ h4, .h4  {
   @extend %section-title;
   text-align: center;
   &.has-alt-align {
-    @include breakpoint(medium) {
+    @include breakpoint(large) {
       text-align: left;
     }
   }
@@ -41,7 +41,7 @@ h4, .h4  {
     margin-right: auto;
   }
   &.has-alt-align {
-    @include breakpoint(medium) {
+    @include breakpoint(large) {
       text-align: left;
       &:after {
         margin-left: 0;

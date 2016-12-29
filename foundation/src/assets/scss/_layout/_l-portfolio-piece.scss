@@ -3,16 +3,40 @@
 // Base
 .l-portfolio-piece {
   @include flex-grid-row(collapse, $wrap: true);
+  margin-bottom: rem-calc(130);
   &__img,
   &__content {
     @include flex-grid-column;
-    @include flex-grid-column-extend(fullwidth);
-    // @include grid-col-collapse;
-    @include breakpoint(medium) {
-      @include flex-grid-column-extend();
-      // flex: 1 1 auto;
-    //   @include flex-grid-column();
-    //   align-self: center;
+    flex: 1 1 auto;
+    @include breakpoint(large) {
+      flex: 1 1 0;
+      align-self: center;
+    }
+  }
+  &__img {
+    margin-bottom: rem-calc(60);
+    @include breakpoint(large) {
+      margin-right: 20px;
+      .has-img-right & {
+        margin-left: 20px;
+        margin-right: 0;
+      }
+    }
+  }
+  &__content {
+    @include breakpoint(large) {
+      margin-left: 20px;
+      .has-img-right & {
+        margin-right: 20px;
+        margin-left: 0;
+      }
+
+    }
+  }
+  &.has-img-right {
+    flex-wrap: wrap-reverse;
+    img {
+      float: right;
     }
   }
 }
