@@ -1,0 +1,49 @@
+// Config
+
+// Base
+.blockquote {
+  // max-width: 90%;
+  font-family: $body-font-family;
+  font-size: rem-calc(18);
+  font-weight: $global-weight-light;
+  line-height: 1.7;
+  color: $medium-gray;
+  @include clearfix;
+  @include margin-center;
+  @include breakpoint(large) {
+    max-width: 740px;
+    line-height: $global-lineheight-larger;
+  }
+  @include breakpoint(large down) {
+    padding-left: 50px;
+  }
+  &:before {
+    content: "";
+    position: relative;
+    bottom: -32px;
+    left: -50px;
+    background: url(../img/quote.svg) top left no-repeat;
+    background-size: contain;
+    height: 40px;
+    width: 40px;
+    display: block;
+    transform: rotateZ(180deg);
+  }
+}
+
+.cite {
+  float: right;
+  line-height: 23px;
+  margin-top: 20px;
+  font-size: $blockquote-fontsize;
+  color: $medium-gray;
+  &:before {
+    content: "";
+  }
+  &__name {
+    color: $primary-color;
+  }
+  &__title {
+    font-weight: bold;
+  }
+}

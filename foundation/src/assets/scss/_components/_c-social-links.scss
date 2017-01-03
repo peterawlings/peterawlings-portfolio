@@ -1,0 +1,23 @@
+// Base
+
+.c-social-links {
+  @include margin-center;
+  @include breakpoint(medium) {
+    margin: 30px 0 0 0;
+  }
+  a {
+    display: inline-block;
+    margin-right: 10px;
+    color: $black;
+    font-size: rem-calc($h4-fontsize);
+    &:last-child {
+      &:after {
+        content: "";
+      }
+    }
+    &:after {
+      content: "/";
+      margin-left: 15px;
+    }
+  }
+}

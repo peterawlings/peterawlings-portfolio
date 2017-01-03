@@ -4,5 +4,8 @@
 // Base
 .c-contact-form {
   max-width: 620px;
-  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  @include margin-center;
+  @include clearfix;
 }

@@ -8,12 +8,17 @@
 
 // placeholders
 %section {
-  padding: rem-calc(50px);
+  padding: rem-calc(50px) rem-calc($-zf-bp-value) / 2;
+  position: relative;
   @include breakpoint(medium) {
-    padding: rem-calc(70px) 0;
+    padding: rem-calc(70px) rem-calc($-zf-bp-value) / 2;
   }
   @include breakpoint(large) {
-    padding: rem-calc(127px) 0;
+    padding: rem-calc(127px) rem-calc($-zf-bp-value) / 2;
+  }
+  &.has-no-padding {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -26,8 +31,9 @@
     @extend %section;
     background-color: $light-gray;
   }
-  &.has-padding {
-    padding-left: rem-calc($-zf-bp-value) / 2;
-    padding-right: rem-calc($-zf-bp-value) / 2;
+  &__inner {
+    max-width: $bp-xlarge;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

@@ -5,7 +5,12 @@
     </div>
     <nav role="navigation">
       <div class="nav-toggle">
-        navigation
+        <div class="nav-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
     </nav>
   </section>
@@ -17,8 +22,8 @@
   </div>
 </header>
 <main role="main">
-    <section class="l-section has-padding">
-
+  <section class="l-section">
+    <div class="l-section__inner">
       <h1 class="c-tagline">Beautiful, handcrafted web solutions. <br class="show-for-large"><span class="c-tagline__sub">Just for you</span></h1>
       <p class="c-description">Using a combination of collaboration and technology with a high level of empathy, interest of human behaviour, user experience and users needs, I endeavour to implement a solution that truly works for you and your users. Each project is different. If you’d like to work together to create some amazing outcomes, <a href="#">let’s talk.</a></p>
       <div class="c-client-logos">
@@ -38,8 +43,9 @@
           <img src="assets/img/logo-cre.png" alt="Commercial Realestate">
         </div>
       </div>
+    </div>
   </section>
-  <section class="l-section--alt">
+  <section class="l-section--alt has-no-padding">
     <h2 class="c-section__title">Work</h2>
     <h4 class="c-section__subtitle is-section-heading">Here are a few projects I am working on</h4>
     <article class="l-portfolio-piece">
@@ -73,31 +79,39 @@
       </div>
     </article>
   </section>
-  <section class="l-section has-padding">
-    <blockquote>
+  <section class="l-section">
+    <blockquote class="blockquote">
     Pete brought a new level of quality to our front end. He is a great problem solver, has a can-do approach, always has good ideas and brings an innovative approach to the table. Pete is ideal working in an agile, fast-paced environment. He can work well both in a team and autonomously, and I'd definitely recommend him to any high technology organisation
-    <cite>Peter Petrovski - Product Manager<br>Commercial Realestate</cite>
+      <cite class="cite"><span class="cite__name">Peter Petrovski</span> - <span class="cite__title">Product Manager</span><br>Commercial Realestate</cite>
     </blockquote>
   </section>
-  <section class="l-section--alt has-padding">
+  <section class="l-section--alt">
     <h2 class="c-section__title">Contact</h2>
     <h4 class="c-section__subtitle is-section-heading">I’m always interested in hearing about new opportunties.<br>Currently available for work</h4>
-    <form class="c-contact-form">
+    <form class="c-contact-form" role="form" data-abide novalidate>
       <!-- drag label out of the placeholder position on hover -->
-      <div class="">
-        <label class="invisible" for="f-name">Name</label>
-        <input class="b-input" type="text" id="f-name" placeholder="Name">
+      <div class="form-field">
+        <label class="form-label" for="f-name">Name*</label>
+        <input class="form-input" data-js="formInput" aria-label="name" type="text" id="f-name" required>
+        <span class="form-error">This field is required.</span>
       </div>
-      <div class="">
-        <label class="invisible" for="f-email">Email</label>
-        <input class="b-input" type="email" id="f-email" placeholder="Email">
+      <div class="form-field">
+        <label class="form-label" for="f-email">Email*</label>
+        <input class="form-input" data-js="formInput" aria-label="email" type="email" id="f-email" required>
+        <span class="form-error">Please enter a valid email address</span>
       </div>
-      <div>
-        <label class="invisible" for="f-message">
-          Message
-        </label>
-        <textarea class="b-input-msg" id="f-message" placeholder="Message"></textarea>
+      <div class="form-field">
+        <label class="form-label" aria-label="message" for="f-message">Message*</label>
+        <textarea class="form-input-msg" data-js="formInput" id="f-message" required></textarea>
       </div>
-  </form>
+      <button type="submit" aria-label="send message" class="button btn-primary">Send message</button>
+      <div class="c-social-links">
+        <a href="https://twitter.com/roolins">twitter</a>
+        <a href="https://www.linkedin.com/in/pete-rawlings-bb106649">linkedin</a>
+        <a href="">resume</a>
+        <a href="">github</a>
+      </div>
+    </form>
+
   </section>
 </main>

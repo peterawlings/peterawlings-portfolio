@@ -5,10 +5,12 @@
   @include flex-grid-row(nest);
   align-items: center;
   &__container {
-    @include flex-grid-column(shrink);
-    min-width: 160px;
+    // @include flex-grid-column(shrink);
+    flex: 0 1 auto;
+    padding: 0 10px;
     margin: 10px auto;
     @include breakpoint(medium) {
+      min-width: 160px;
       &:first-child {
         margin-left: 0;
       }

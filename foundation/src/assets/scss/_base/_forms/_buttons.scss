@@ -1,0 +1,12 @@
+// base
+.btn-primary {
+  font-size: 18px;
+  font-family: $body-font-family;
+  font-weight: bold;
+  width: 100%;
+  @include breakpoint(medium) {
+    width: auto;
+    margin-left: auto;
+    order: 1;
+  }
+}

@@ -3,7 +3,13 @@
 // Base
 .l-portfolio-piece {
   @include flex-grid-row(collapse, $wrap: true);
-  margin-bottom: rem-calc(130);
+  margin-bottom: rem-calc(120);
+  @include breakpoint(large) {
+    margin-bottom: rem-calc(200);
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
   &__img,
   &__content {
     @include flex-grid-column;
@@ -16,6 +22,7 @@
   &__img {
     margin-bottom: rem-calc(60);
     @include breakpoint(large) {
+      margin-bottom: 0;
       margin-right: 20px;
       .has-img-right & {
         margin-left: 20px;
@@ -30,7 +37,6 @@
         margin-right: 20px;
         margin-left: 0;
       }
-
     }
   }
   &.has-img-right {

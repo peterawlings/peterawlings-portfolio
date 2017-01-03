@@ -7,6 +7,11 @@
   margin-top: $dist;
 }
 
+@mixin margin-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 // Adds functionality for stacking the columns and making each one full width
 // @mixin flex-grid-column-extend($fullwidth: false) {
 //     @if $fullwidth == fullwidth {

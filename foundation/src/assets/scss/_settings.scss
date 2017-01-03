@@ -49,17 +49,18 @@
 $global-font-size: 100%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
+$global-lineheight-larger: 2.1;
 $foundation-palette: (
   primary: #77b9d6,
-  secondary: #767676,
+  secondary: #ffd675,
   success: #3adb76,
   warning: #ffae00,
   alert: #cc4b37,
 );
 $light-gray: #f2f2f2;
-$medium-gray: #cacaca;
+$medium-gray: #c0c0c0;
 $dark-gray: #1a2126;
-$black: #1a2126;
+$black: $dark-gray;
 $white: #fefefe;
 $body-background: $white;
 $body-font-color: $black;
@@ -70,6 +71,7 @@ $global-margin-larger: rem-calc(80);
 $global-padding: 1rem;
 $global-weight-normal: normal;
 $global-weight-bold: bold;
+$global-weight-light: lighter;
 $global-radius: 0;
 $global-text-direction: ltr;
 $global-flexbox: true;
@@ -81,6 +83,8 @@ $print-transparent-backgrounds: true;
 // --------------
 
 $bp-medium: 640px;
+$bp-xlarge: 1024px;
+
 $bp-custom: 768px;
 
 $breakpoints: (
@@ -123,6 +127,7 @@ $h3-fontsize-larger: 24;
 $h3-fontsize: 18;
 $h4-fontsize-larger: 14;
 $h4-fontsize: 14;
+$blockquote-fontsize: 16px;
 $header-styles: (
   small: (
     'h1, .h1': ('font-size': $h1-fontsize, 'mb': $global-margin),
@@ -369,7 +374,7 @@ $fieldset-border: 1px solid $medium-gray;
 $fieldset-padding: rem-calc(60);
 $fieldset-margin: rem-calc(18 0);
 $legend-padding: rem-calc(0 3);
-$form-spacing: rem-calc(16);
+$form-spacing: rem-calc(30);
 $helptext-color: $black;
 $helptext-font-size: rem-calc(13);
 $helptext-font-style: italic;
@@ -393,7 +398,7 @@ $input-background: $white;
 $input-background-focus: $white;
 $input-background-disabled: $light-gray;
 $input-border: 1px solid $medium-gray;
-$input-border-focus: 1px solid $dark-gray;
+$input-border-focus: 1px solid $medium-gray;
 $input-shadow: inset 0 1px 2px rgba($black, 0.1);
 $input-shadow-focus: 0 0 5px $medium-gray;
 $input-cursor-disabled: not-allowed;
