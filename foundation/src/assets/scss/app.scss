@@ -16,12 +16,15 @@
 // layout
 @import '_layout/_l-site-section';
 @import '_layout/_l-header';
-@import '_layout/_l-navigation';
+@import '_layout/_l-top-bar';
 @import '_layout/_l-portfolio-piece';
 
 // components
 @import '_components/_c-headings';
+@import '_components/_c-logo';
+@import '_components/_c-navigation';
 @import '_components/_c-nav-toggle';
+@import '_components/_c-title-section';
 @import '_components/_c-client-logos';
 @import '_components/_c-contact-form';
 @import '_components/_c-social-links';

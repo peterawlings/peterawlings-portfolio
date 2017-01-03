@@ -53,12 +53,12 @@ h4, .h4  {
   }
 }
 
-.c-header-section__title {
+.l-header-section__title {
   @extend %section-title;
   color: $white;
   margin-bottom: 11px;
 }
-.c-header-section__subtitle {
+.l-header-section__subtitle {
   font-size: rem-calc($h3-fontsize);
   font-weight: normal;
   color: $white;

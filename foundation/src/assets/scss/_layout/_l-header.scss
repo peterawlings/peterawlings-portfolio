@@ -1,7 +1,7 @@
 // Config
 
 // Base
-.c-header {
+.l-header {
   @include aspect-ratio(72, 35);
   background: url(../img/hero.jpg) top left no-repeat;
   background-size: cover;
@@ -10,18 +10,5 @@
   @include breakpoint(medium) {
     max-height: none;
     max-height: 610px;
-  }
-}
-
-.m-title-section {
-  margin-top: 130px;
-  margin-left: 30px;
-  @include breakpoint(medium) {
-    float: right;
-    margin-top: 22vw;
-    margin-right: 10vw;
-  }
-  @include breakpoint(xlarge){
-    margin-top: 293px;
   }
 }

@@ -1,10 +1,10 @@
 $(document).foundation();
 
-
 var portfolio = portfolio || {};
 
 $(function() {
   portfolio.form.init();
+  portfolio.nav.init();
 });
 
 portfolio.form = (function () {
@@ -24,6 +24,23 @@ portfolio.form = (function () {
         $this.prev().removeClass('is-focused');
       }
     }
+  };
+  return {
+    init: initialize
+  };
+}());
+
+portfolio.nav = (function () {
+  'use strict';
+
+  // variables
+  var $navMenu   = $('[data-js="nav-menu"]');
+  var $navToggle = $navMenu.find('.nav-icon');
+
+  var initialize = function() {
+    $navToggle.on('click', function(){
+      $navMenu.toggleClass('is-open');
+    });
   };
 
   return {
