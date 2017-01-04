@@ -3,13 +3,14 @@
 // Base
 .nav-icon {
   position: relative;
+  top: 0;
   z-index: 20;
   float: right;
   width: 30px;
   height: 25px;
   cursor: pointer;
   transform: rotate(0deg);
-  transition: .5s ease-in-out;
+  transition: all $transition-time-short $ease-in-out;
   span {
     display: block;
     position: absolute;
@@ -19,35 +20,38 @@
     background: $secondary-color;
     opacity: 1;
     transform: rotate(0deg);
-    transition: .25s ease-in-out;
+    transition: 0.25s $ease-in-out;
     &:nth-child(1) {
       top: 0px;
     }
     &:nth-child(2),
     &:nth-child(3) {
-      top: 11px;
+      top: 10px;
     }
     &:nth-child(4) {
-      top: 23px;
+      top: 20px;
     }
 
     .is-open & {
-    &:nth-child(1) {
-      top: 18px;
-      width: 0%;
-      left: 50%;
-    }
-    &:nth-child(2) {
-      transform: rotate(45deg);
-    }
-    &:nth-child(3) {
-      transform: rotate(-45deg);
-    }
-    &:nth-child(4) {
-      top: 18px;
-      width: 0%;
-      left: 50%;
+      &:nth-child(1) {
+        top: 18px;
+        width: 0%;
+        left: 50%;
+      }
+      &:nth-child(2) {
+        transform: rotate(45deg);
+      }
+      &:nth-child(3) {
+        transform: rotate(-45deg);
+      }
+      &:nth-child(4) {
+        top: 18px;
+        width: 0%;
+        left: 50%;
+      }
     }
   }
-  }
+  // .is-fixed & {
+  //   top: -11px;
+  // }
 }

@@ -12,6 +12,12 @@
   margin-right: auto;
 }
 
+@mixin no-bullets {
+  list-style: none;
+  padding: 0;
+  margin-left: 0;
+}
+
 // Adds functionality for stacking the columns and making each one full width
 // @mixin flex-grid-column-extend($fullwidth: false) {
 //     @if $fullwidth == fullwidth {

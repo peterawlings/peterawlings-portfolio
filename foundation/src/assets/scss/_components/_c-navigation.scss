@@ -3,46 +3,72 @@
 // Base
 .c-nav-container {
   position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 10;
   width: 0;
   height: 0;
   opacity: 0;
   overflow: hidden;
-  transition: width .3s $ease-in-out, height 0.3s $ease-in-out, opacity 0.3s $ease-in-out;
+  transition: all 0.3s $ease-in-out;
   .is-open & {
     width: 100%;
     height: 100%;
     opacity: 1;
-    // transition: width 1s $ease-in-out 1s, height 1s $ease-in-out 1s;
-    top: 0;
-    // left: 0;
-    right: 0;
-    // bottom: 0;
-    z-index: 10;
     background: $black;
   }
 }
 
 .c-nav-list {
-  color: $white;
   margin-top: 130px;
-  // @include horizontal-center;
+  opacity: 0;
+  width: 100%;
+  visibility: hidden;
+  float: right;
+  color: $white;
+  font-size: rem-calc(40);
+  text-transform: uppercase;
+  line-height: 1.2;
+  font-weight: bold;
+  transform: translateY(0);
+  transition: transform 0.9s $ease-out $transition-time-short,
+              opacity $transition-time-short $ease-out $transition-time-short;
+  @include no-bullets;
+  @include breakpoint(large) {
+    width: 50%;
+  }
+  .is-open & {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(20px);
+  }
   li {
     &:nth-child(1),
     &:nth-child(2),
     &:nth-child(3)  {
+      visibility: hidden;
       opacity: 0;
-      margin-top: 20px;
-      transition: all 0.3s linear 0.3s;
+      text-align: center;
+      transform: translateY(0);
+      transition: transform 0.7s $ease-out $transition-time-short,
+                  opacity 0.5s $ease-out $transition-time-short;
+      @include breakpoint(large) {
+        text-align: left;
+      }
       .is-open & {
         opacity: 1;
-        margin-top: 0;
+        visibility: visible;
       }
     }
     &:nth-child(2) {
-      transition-delay: 0.5s;
+      .is-open & {
+        transform: translateY(10px);
+      }
     }
     &:nth-child(3) {
-      transition-delay: 0.7s;
+      .is-open & {
+        transform: translateY(20px);
+      }
     }
   }
 }
