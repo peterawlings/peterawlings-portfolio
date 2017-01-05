@@ -12,6 +12,7 @@ h4, .h4  {
 
 .c-tagline {
   margin-bottom: rem-calc(56);
+  @include reveal();
   @include breakpoint(large) {
     margin-bottom: rem-calc(88);
   }
@@ -50,19 +51,5 @@ h4, .h4  {
   }
   &.is-section-heading {
     margin-bottom: $global-margin-larger;
-  }
-}
-
-.l-header-section__title {
-  @extend %section-title;
-  color: $white;
-  margin-bottom: 11px;
-}
-.l-header-section__subtitle {
-  font-size: rem-calc($h3-fontsize);
-  font-weight: normal;
-  color: $white;
-  &:after {
-    @include separator($primary-color, 75px);
   }
 }

@@ -11,13 +11,24 @@
     color: $black;
     font-size: rem-calc($h4-fontsize);
     &:last-child {
+      margin-right: 0;
       &:after {
         content: "";
+        margin-left: 0;
       }
     }
     &:after {
       content: "/";
       margin-left: 15px;
+    }
+  }
+  &__in-nav {
+    text-align: center;
+    @include breakpoint(medium) {
+      text-align: left;
+    }
+    a {
+      color: $white;
     }
   }
 }

@@ -1,13 +1,15 @@
 // Config
 
 // Base
-.blockquote {
-  // max-width: 90%;
+.blockquote-main {
+  position: relative;
   font-family: $body-font-family;
   font-size: rem-calc(18);
   font-weight: $global-weight-light;
   line-height: 1.7;
+  margin-bottom: 0;
   color: $medium-gray;
+  @include reveal($single: true);
   @include clearfix;
   @include margin-center;
   @include breakpoint(large) {
@@ -19,13 +21,13 @@
   }
   &:before {
     content: "";
-    position: relative;
-    bottom: -32px;
-    left: -50px;
-    background: url(../img/quote.svg) top left no-repeat;
-    background-size: contain;
+    position: absolute;
+    top: 0;
+    left: 0px;
     height: 40px;
     width: 40px;
+    background: url(../img/quote.svg) top left no-repeat;
+    background-size: contain;
     display: block;
     transform: rotateZ(180deg);
   }

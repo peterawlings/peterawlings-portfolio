@@ -4,8 +4,8 @@
 @import '_foundation-base';
 
 // utils
+// mixins-custom included in _foundation-base
 @import '_utils/_animations';
-
 
 // base
 @import '_base/_forms/_buttons';
@@ -24,7 +24,7 @@
 @import '_components/_c-logo';
 @import '_components/_c-navigation';
 @import '_components/_c-nav-toggle';
-@import '_components/_c-title-section';
+@import '_components/_c-hero-title';
 @import '_components/_c-client-logos';
 @import '_components/_c-contact-form';
 @import '_components/_c-social-links';

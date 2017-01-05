@@ -11,7 +11,7 @@
   float: left;
   z-index: 20;
   transition: top $transition-time-short $ease-out;
-  .is-fixed & {
-    top: -10px;
-  }
+  // .is-fixed & {
+  //   top: -10px;
+  // }
 }

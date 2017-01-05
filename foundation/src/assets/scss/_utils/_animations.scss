@@ -2,6 +2,8 @@
 $ease-in-out: cubic-bezier(0.565, 0.005, 0.280, 1.000);
 $ease-out: cubic-bezier(0.000, 0.000, 0.045, 1.000);
 $transition-time-short: 0.3s;
+$transition-time-medium: 0.5s;
+$transition-time-longer: 0.7s;
 
 // base
 @keyframes opacity-in-out {
@@ -15,14 +17,3 @@ $transition-time-short: 0.3s;
     opacity: 1;
   }
 }
-
-// @keyframes zoom-out {
-//   0 {
-//     width: 0;
-//     height: 0;
-//   }
-//   100% {
-//     width: 100%;
-//     height: 100%;
-//   }
-// }

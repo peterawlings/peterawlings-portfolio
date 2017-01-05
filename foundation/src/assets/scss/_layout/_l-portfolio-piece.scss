@@ -21,6 +21,7 @@
   }
   &__img {
     margin-bottom: rem-calc(60);
+    @include reveal($delay: 0.5s);
     @include breakpoint(large) {
       margin-bottom: 0;
       margin-right: 20px;
@@ -31,6 +32,7 @@
     }
   }
   &__content {
+    @include reveal($delay: 0.7s);
     @include breakpoint(large) {
       margin-left: 20px;
       .has-img-right & {

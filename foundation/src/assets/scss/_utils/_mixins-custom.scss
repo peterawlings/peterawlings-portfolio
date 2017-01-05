@@ -14,9 +14,33 @@
 
 @mixin no-bullets {
   list-style: none;
-  padding: 0;
   margin-left: 0;
 }
+
+// Creates the fade in animation on elements as scroll down the page
+// Works with the 'waypoints.js' plugin
+
+@mixin reveal ($distance: 20, $delay: 0s, $single: null) {
+  opacity: 0;
+  transform: translateY($distance + px);
+  transition: all $transition-time-longer $ease-out $delay;
+  .no-js & {
+    opacity: 1;
+  }
+  @if ($single) {
+    &.is-shown {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  } @else {
+    .is-shown & {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}
+
+
 
 // Adds functionality for stacking the columns and making each one full width
 // @mixin flex-grid-column-extend($fullwidth: false) {

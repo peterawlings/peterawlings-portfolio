@@ -1,4 +1,4 @@
-<header class="l-header" role="banner">
+<header class="l-header" role="banner" id="top">
   <section class="c-top-bar">
     <div class="c-logo sticky">
       pete.rawlings.
@@ -11,26 +11,35 @@
         <span></span>
       </div>
       <nav role="navigation" class="c-nav-container">
-        <ul class="c-nav-list">
-          <li><a href="#">home</a></li>
-          <li><a href="#">about</a></li>
-          <li><a href="#">contact</a></li>
-        </ul>
+        <div class="c-nav-list__wrap">
+          <ul class="c-nav-list">
+            <li><a href="#top">home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#work">work</a></li>
+            <li><a href="#contact">contact</a></li>
+          </ul>
+          <div class="c-social-links c-social-links__in-nav">
+            <a href="https://twitter.com/roolins">twitter</a>
+            <a href="https://www.linkedin.com/in/pete-rawlings-bb106649">linkedin</a>
+            <a href="">resume</a>
+            <a href="">github</a>
+          </div>
+        </div>
       </nav>
     </div>
   </section>
   <div class="a-ratio-content">
-    <article class="c-title-section">
-      <h1 class="l-header-section__title">Hi, I'm Pete</h1>
-      <h3 class="l-header-section__subtitle">I craft simple, effective and user-centric web solutions</h3>
+    <article class="c-hero-title">
+      <h1 class="c-hero-title__title">Hi, I'm Pete</h1>
+      <h3 class="c-hero-title__subtitle">I craft simple, effective and user-centric web solutions</h3>
     </article>
   </div>
 </header>
 <main role="main">
-  <section class="l-section">
-    <div class="l-section__inner">
+  <section class="l-section" id="about">
+    <div class="l-section__inner" data-js="waypoint">
       <h1 class="c-tagline">Beautiful, handcrafted web solutions. <br class="show-for-large"><span class="c-tagline__sub">Just for you</span></h1>
-      <p class="c-description">Using a combination of collaboration and technology with a high level of empathy, interest of human behaviour, user experience and users needs, I endeavour to implement a solution that truly works for you and your users. Each project is different. If you’d like to work together to create some amazing outcomes, <a href="#">let’s talk.</a></p>
+      <p class="c-description">Using a combination of collaboration and technology with a high level of empathy, interest of human behaviour, user experience and users needs, I endeavour to implement a solution that truly works for you and your users. Each project is different. If you’d like to work together to create some amazing outcomes, <a href="#contact">let’s talk.</a></p>
       <div class="c-client-logos">
         <div class="c-client-logos__container">
           <img src="assets/img/logo-domain.png" alt="Domain">
@@ -50,10 +59,10 @@
       </div>
     </div>
   </section>
-  <section class="l-section--alt has-no-padding">
+  <section class="l-section--alt has-no-padding" id="work">
     <h2 class="c-section__title">Work</h2>
     <h4 class="c-section__subtitle is-section-heading">Here are a few projects I am working on</h4>
-    <article class="l-portfolio-piece">
+    <article class="l-portfolio-piece" data-js="waypoint">
       <div class="l-portfolio-piece__img column">
         <img src="assets/img/work-cre.png" srcset="assets/img/work-cre-small.png 435w, assets/img/work-cre.png 735w" alt="Commercial Realestate">
       </div>
@@ -63,7 +72,7 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque deserunt distinctio, autem quidem excepturi, mollitia ullam voluptatibus praesentium earum delectus ratione harum eveniet ex laborum omnis quaerat aliquam reprehenderit, saepe.</p>
       </div>
     </article>
-    <article class="l-portfolio-piece has-img-right">
+    <article class="l-portfolio-piece has-img-right" data-js="waypoint">
       <div class="l-portfolio-piece__content">
         <h3 class="c-section__title has-alt-align">Australand</h3>
         <h4 class="c-section__subtitle has-alt-align">Front end development</h4>
@@ -73,7 +82,7 @@
         <img src="assets/img/work-australand.png" srcset="assets/img/work-australand-small.png 435w, assets/img/work-australand.png 735w" alt="Australand">
       </div>
     </article>
-    <article class="l-portfolio-piece">
+    <article class="l-portfolio-piece" data-js="waypoint">
       <div class="l-portfolio-piece__img column">
         <img src="assets/img/work-neat.png" srcset="assets/img/work-neat-small.png 435w, assets/img/work-neat.png 735w" alt="Neat">
       </div>
@@ -85,16 +94,15 @@
     </article>
   </section>
   <section class="l-section">
-    <blockquote class="blockquote">
+    <blockquote class="blockquote-main" data-js="waypoint">
     Pete brought a new level of quality to our front end. He is a great problem solver, has a can-do approach, always has good ideas and brings an innovative approach to the table. Pete is ideal working in an agile, fast-paced environment. He can work well both in a team and autonomously, and I'd definitely recommend him to any high technology organisation
       <cite class="cite"><span class="cite__name">Peter Petrovski</span> - <span class="cite__title">Product Manager</span><br>Commercial Realestate</cite>
     </blockquote>
   </section>
-  <section class="l-section--alt">
+  <section class="l-section--alt" id="contact">
     <h2 class="c-section__title">Contact</h2>
     <h4 class="c-section__subtitle is-section-heading">I’m always interested in hearing about new opportunties.<br>Currently available for work</h4>
     <form class="c-contact-form" role="form" data-abide novalidate>
-      <!-- drag label out of the placeholder position on hover -->
       <div class="form-field">
         <label class="form-label" for="f-name">Name*</label>
         <input class="form-input" data-js="formInput" aria-label="name" type="text" id="f-name" required>
@@ -113,6 +121,7 @@
       <div class="c-social-links">
         <a href="https://twitter.com/roolins">twitter</a>
         <a href="https://www.linkedin.com/in/pete-rawlings-bb106649">linkedin</a>
+        <!-- TODO -->
         <a href="">resume</a>
         <a href="">github</a>
       </div>

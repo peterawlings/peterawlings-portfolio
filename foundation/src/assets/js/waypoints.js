@@ -25,6 +25,11 @@ portfolio.waypoints = (function () {
     //   console.log('scroll');
     //   $topBar.toggleClass('has-alt');
     // })
+    var waypoints = $('[data-js="waypoint"]').waypoint(function(direction) {
+      $(this.element).addClass('is-shown');
+    },{
+      offset: '85%'
+    })
   };
 
   return {

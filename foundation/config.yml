@@ -59,11 +59,13 @@ PATHS:
     # - "bower_components/foundation-sites/js/foundation.zf.responsiveAccordionTabs.js"
     # Paths to your own project code are here
     - "bower_components/waypoints/lib/jquery.waypoints.js"
+    - "bower_components/jquery.easing/js/jquery.easing.js"
     # Custom JS
     # - "src/assets/js/!(app).js"
     # - "src/assets/js/app.js"
     - "src/assets/js/namespace.js"
     - "src/assets/js/form.js"
     - "src/assets/js/navigation.js"
+    - "src/assets/js/scroll.js"
     - "src/assets/js/waypoints.js"
     - "src/assets/js/main.js"
