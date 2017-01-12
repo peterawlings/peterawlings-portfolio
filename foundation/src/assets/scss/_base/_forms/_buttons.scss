@@ -1,12 +1,48 @@
 // base
 .btn-primary {
+  @include button;
+  position: relative;
   font-size: 18px;
   font-family: $body-font-family;
   font-weight: bold;
   width: 100%;
+  overflow: hidden;
+  border: none;
+  display: block;
+  @include breakpoint(medium) {
+    // TODO fix this behaviour so it works across all button widths
+    &:before {
+      content: '';
+      transform: rotateZ(70deg) translateY(-170px);
+      top: -30px;
+      display: block;
+      position: absolute;
+      z-index: 0;
+      width: 150px;
+      height: 150px;
+      background-color: lighten(get-color(primary), 15%);
+      transition: all 0.4s $ease-in-out;
+    }
+  }
+  &:hover, &:focus {
+    @include breakpoint(medium) {
+      &:before {
+        transform: rotateZ(70deg) translateY(170px);
+        background: linear-gradient(to bottom,  #b2d7e8 0%,#b2d7e8 68%,#77b9d6 68%,#77b9d6 68%,#77b9d6 76%,#b2d7e8 76%);
+      }
+    }
+  }
   @include breakpoint(medium) {
     width: auto;
-    margin-left: auto;
-    order: 1;
+  }
+  &--right {
+    @include breakpoint(medium) {
+      margin-left: auto;
+      order: 1;
+    }
+  }
+  span {
+    z-index: 1;
+    position: relative;
   }
 }

@@ -1,4 +1,4 @@
-<header class="l-header" role="banner" id="top">
+<header class="l-header has-image" role="banner" id="top">
   <section class="c-top-bar">
     <div class="c-logo sticky">
       pete.rawlings.
@@ -18,12 +18,17 @@
             <li><a href="#work">work</a></li>
             <li><a href="#contact">contact</a></li>
           </ul>
-          <div class="c-social-links c-social-links__in-nav">
-            <a href="https://twitter.com/roolins">twitter</a>
-            <a href="https://www.linkedin.com/in/pete-rawlings-bb106649">linkedin</a>
-            <a href="">resume</a>
-            <a href="">github</a>
-          </div>
+          <ul class="c-social-links c-social-links__as-nav">
+            <li>
+              <a href="https://twitter.com/roolins">twitter</a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/pete-rawlings-bb106649">linkedin</a>
+            </li>
+            <li>
+              <a href="assets/docs/pete_rawlings_CV_2016.pdf" target="_blank">resume</a>
+            </li>
+          </ul>
         </div>
       </nav>
     </div>
@@ -69,14 +74,19 @@
       <div class="l-portfolio-piece__content">
         <h3 class="c-section__title has-alt-align">Commercial Realestate</h3>
         <h4 class="c-section__subtitle has-alt-align">Front end development</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque deserunt distinctio, autem quidem excepturi, mollitia ullam voluptatibus praesentium earum delectus ratione harum eveniet ex laborum omnis quaerat aliquam reprehenderit, saepe.</p>
+        <p>Part of the Domain Group, Commercial Realestate is leading the way in connecting commercial property vendors and purchasers. With one million unique visitors per month, the need for innovation and new features, improving existing elements, performance and a rapidly growing audience, striking a fine balance was essential for success.</p>
+        <button type="submit" aria-label="send message" class="btn-primary">
+            <span>View case study</span>
+        </button>
+        <a href="https://www.commercialrealestate.com.au/" title="Commercial Realestate">Visit website</a>
       </div>
     </article>
     <article class="l-portfolio-piece has-img-right" data-js="waypoint">
       <div class="l-portfolio-piece__content">
-        <h3 class="c-section__title has-alt-align">Australand</h3>
+        <h3 class="c-section__title has-alt-align">Frasers Property (formally Australand)</h3>
         <h4 class="c-section__subtitle has-alt-align">Front end development</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque deserunt distinctio, autem quidem excepturi, mollitia ullam voluptatibus praesentium earum delectus ratione harum eveniet ex laborum omnis quaerat aliquam reprehenderit, saepe.</p>
+        <p>Australand (now Frasers property) is one of Australia’s leading property groups across Australia and New Zealand. Using a powerful CMS (Sitecore) to deliver an <a href="http://www.sitecore.net/company/press-and-media/press-releases/2014/11/sitecore-experience-awards-anz-2014" title="Sitecore 2014 Customer Experience Award winner (Australia and New Zealand)">award winning</a>, highly flexible, responsive solution.</p>
+        <a href="http://www.frasersproperty.com.au/" title="Frasers Proprty">Visit website</a>
       </div>
       <div class="l-portfolio-piece__img column">
         <img src="assets/img/work-australand.png" srcset="assets/img/work-australand-small.png 435w, assets/img/work-australand.png 735w" alt="Australand">
@@ -89,7 +99,8 @@
       <div class="l-portfolio-piece__content">
         <h3 class="c-section__title has-alt-align">This is Neat Cleaning</h3>
         <h4 class="c-section__subtitle has-alt-align">Front end development</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque deserunt distinctio, autem quidem excepturi, mollitia ullam voluptatibus praesentium earum delectus ratione harum eveniet ex laborum omnis quaerat aliquam reprehenderit, saepe.</p>
+        <p>This is Neat Cleaning is a startup set within the end of lease cleaning industry. A standout design and exceptional usability built on the Wordpress platform</p>
+        <a href="https://thisisneat.com.au/" title="This is Neat Cleaning">Visit website</a>
       </div>
     </article>
   </section>
@@ -106,7 +117,7 @@
       <div class="form-field">
         <label class="form-label" for="f-name">Name*</label>
         <input class="form-input" data-js="formInput" aria-label="name" type="text" id="f-name" required>
-        <span class="form-error">This field is required.</span>
+        <span class="form-error">This field is required</span>
       </div>
       <div class="form-field">
         <label class="form-label" for="f-email">Email*</label>
@@ -116,16 +127,31 @@
       <div class="form-field">
         <label class="form-label" aria-label="message" for="f-message">Message*</label>
         <textarea class="form-input-msg" data-js="formInput" id="f-message" required></textarea>
+        <span class="form-error">This field is required</span>
       </div>
-      <button type="submit" aria-label="send message" class="button btn-primary">Send message</button>
-      <div class="c-social-links">
-        <a href="https://twitter.com/roolins">twitter</a>
-        <a href="https://www.linkedin.com/in/pete-rawlings-bb106649">linkedin</a>
-        <!-- TODO -->
-        <a href="">resume</a>
-        <a href="">github</a>
-      </div>
+      <button type="submit" aria-label="send message" class="btn-primary btn-primary--right">
+        <span>Send message</span>
+      </button>
+      <ul class="c-social-links">
+        <li>
+          <a href="https://twitter.com/roolins">twitter</a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/pete-rawlings-bb106649">linkedin</a>
+        </li>
+        <li>
+          <a href="assets/docs/pete_rawlings_CV_2016.pdf" target="_blank">resume</a>
+        </li>
+      </ul>
     </form>
 
   </section>
 </main>
+<footer class="l-footer" role="contentinfo">
+  <ul class="c-social-links c-social-links__as-nav c-social-links--footer">
+    <li><a href="#top">home</a></li>
+    <li><a href="#about">about</a></li>
+    <li><a href="#work">work</a></li>
+    <li><a href="#contact">contact</a></li>
+  </ul>
+</footer>

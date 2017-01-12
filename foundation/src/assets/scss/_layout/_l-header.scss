@@ -2,16 +2,19 @@
 
 // Base
 .l-header {
-  @include aspect-ratio(72, 35);
-  background: url(../img/hero.jpg) top left no-repeat;
-  background-size: cover;
-  background-position: bottom center;
-  min-height: 300px;
-  @include breakpoint(medium) {
-    background-position: bottom left;
-    min-height: 100vh;
-  }
-  @include breakpoint(large) {
+  &.has-image {
+    @include aspect-ratio(72, 35);
+    background: url(../img/hero-small.jpg) top left no-repeat;
     background-position: bottom center;
+    background-size: cover;
+    min-height: 300px;
+    @include breakpoint(medium) {
+      background-position: bottom left;
+      background-image: url(../img/hero.jpg);
+      min-height: 100vh;
+    }
+    @include breakpoint(large) {
+      background-position: bottom center;
+    }
   }
 }

@@ -3,6 +3,7 @@
 // Base
 .l-portfolio-piece {
   @include flex-grid-row(collapse, $wrap: true);
+  justify-content: flex-start;
   margin-bottom: rem-calc(120);
   @include breakpoint(large) {
     margin-bottom: rem-calc(200);
@@ -14,6 +15,7 @@
   &__content {
     @include flex-grid-column;
     flex: 1 1 auto;
+    max-width: 760px;
     @include breakpoint(large) {
       flex: 1 1 0;
       align-self: center;
@@ -43,6 +45,7 @@
   }
   &.has-img-right {
     flex-wrap: wrap-reverse;
+    justify-content: flex-end;
     img {
       float: right;
     }
