@@ -46,7 +46,7 @@
 // 1. Global
 // ---------
 
-$global-font-size: 100%;
+$global-font-size: 112.5%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $global-lineheight-larger: 2.1;
@@ -83,7 +83,7 @@ $print-transparent-backgrounds: true;
 // --------------
 
 $bp-medium: 640px;
-$bp-xlarge: 1024px;
+$bp-xlarge: 1080px;
 
 $bp-custom: 768px;
 
@@ -109,6 +109,8 @@ $grid-column-gutter: (
 $grid-column-align-edge: true;
 $block-grid-max: 8;
 
+$gutter: rem-calc(20);
+
 // 4. Base Typography
 // ------------------
 
@@ -120,9 +122,9 @@ $header-color: inherit;
 $header-lineheight: 1.4;
 $header-margin-bottom: $global-margin;
 $h1-fontsize-larger: 40;
-$h1-fontsize: 30px;
+$h1-fontsize: 32px;
 $h2-fontsize-larger: 36;
-$h2-fontsize: 20;
+$h2-fontsize: 28;
 $h3-fontsize-larger: 24;
 $h3-fontsize: 18;
 $h4-fontsize-larger: 14;
@@ -131,7 +133,7 @@ $blockquote-fontsize: 16px;
 $header-styles: (
   small: (
     'h1, .h1': ('font-size': $h1-fontsize, 'mb': $global-margin),
-    'h2, .h2': ('font-size': 20, 'mb': $global-margin),
+    'h2, .h2': ('font-size': $h2-fontsize, 'mb': $global-margin),
     'h3, .h3': ('font-size': $h3-fontsize, 'mb': $global-margin),
     'h4, .h4': ('font-size': $h4-fontsize, 'mb': $global-margin),
     'h5, .h5': ('font-size': 17, 'mb': $global-margin),
@@ -139,7 +141,7 @@ $header-styles: (
   ),
   medium: (
     'h1, .h1': ('font-size': $h1-fontsize-larger, 'mb': $global-margin),
-    'h2, .h2': ('font-size': 36, 'mb': $global-margin),
+    'h2, .h2': ('font-size': $h2-fontsize-larger, 'mb': $global-margin),
     'h3, .h3': ('font-size': $h3-fontsize, 'mb': $global-margin),
     'h4, .h4': ('font-size': $h4-fontsize-larger, 'mb': $global-margin),
     'h5, .h5': ('font-size': 20, 'mb': $global-margin),

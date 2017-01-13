@@ -63,6 +63,7 @@ PATHS:
     # Custom JS
     # - "src/assets/js/!(app).js"
     # - "src/assets/js/app.js"
+    - "src/assets/js/plugins/picturefill.min.js"
     - "src/assets/js/namespace.js"
     - "src/assets/js/form.js"
     - "src/assets/js/navigation.js"

@@ -26,9 +26,9 @@
     @include reveal($delay: 0.5s);
     @include breakpoint(large) {
       margin-bottom: 0;
-      margin-right: 20px;
+      margin-right: $gutter;
       .has-img-right & {
-        margin-left: 20px;
+        margin-left: $gutter;
         margin-right: 0;
       }
     }
@@ -36,9 +36,9 @@
   &__content {
     @include reveal($delay: 0.7s);
     @include breakpoint(large) {
-      margin-left: 20px;
+      margin-left: $gutter;
       .has-img-right & {
-        margin-right: 20px;
+        margin-right: $gutter;
         margin-left: 0;
       }
     }

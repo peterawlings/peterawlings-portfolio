@@ -5,9 +5,11 @@ h4, .h4  {
 
 // Base
 %section-title {
-  font-size: rem-calc($h1-fontsize-larger);
+  // font-size: rem-calc($h1-fontsize-larger);
   line-height: 1;
   margin-bottom: 7px;
+  text-align: center;
+
 }
 
 .c-tagline {
@@ -25,7 +27,14 @@ h4, .h4  {
 
 .c-section__title {
   @extend %section-title;
-  text-align: center;
+  &--main {
+    @extend %section-title;
+    text-transform: uppercase;
+  }
+  &--secondary {
+    @extend %section-title;
+    margin-bottom: rem-calc(50);
+  }
   &.has-alt-align {
     @include breakpoint(large) {
       text-align: left;
