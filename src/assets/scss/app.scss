@@ -5,13 +5,14 @@
 
 // utils
 // mixins-custom included in _foundation-base
-@import '_utils/_animations';
+@import '_utils/_effects';
 
 // base
 @import '_base/_forms/_buttons';
 @import '_base/_forms/_forms';
 @import '_base/_forms/_errors';
 @import '_base/_typography/_quote';
+@import '_base/_typography/_typography';
 
 // layout
 @import '_layout/_l-site-section';
@@ -25,7 +26,7 @@
 @import '_components/_c-top-bar';
 @import '_components/_c-logo';
 @import '_components/_c-navigation';
-@import '_components/_c-nav-toggle';
+@import '_components/_c-nav-icon';
 @import '_components/_c-hero-title';
 @import '_components/_c-client-logos';
 @import '_components/_c-contact-form';

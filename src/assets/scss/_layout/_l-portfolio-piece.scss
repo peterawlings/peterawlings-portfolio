@@ -43,6 +43,9 @@
       }
     }
   }
+  &__button {
+    display: block;
+  }
   &.has-img-right {
     flex-wrap: wrap-reverse;
     justify-content: flex-end;

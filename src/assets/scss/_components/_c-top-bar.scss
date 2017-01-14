@@ -13,13 +13,13 @@
     width: 100%;
     height: 70px;
     padding: 20px 30px;
-    background-color: #3b3b3b;
+    background-color: rgba($dark-gray, 0.75);
     transition: all $transition-time-short $ease-out;
     .page-home & {
       background-color: transparent;
     }
     &.is-stuck {
-      background-color: #3b3b3b;
+      background-color: rgba($dark-gray, 0.75);
       height: 50px;
     }
   }

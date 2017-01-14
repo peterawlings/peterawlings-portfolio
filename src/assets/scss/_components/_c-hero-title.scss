@@ -2,19 +2,15 @@
 
 // Base
 .c-hero-title {
-  // margin-top: rem-calc(130);
   margin-left: rem-calc(30);
   position: absolute;
   top: 120px;
   @include breakpoint(large) {
     top: 57%;
     right: 0;
-    // float: right;
-    // margin-top: 54vh;
     margin-right: 13vw;
   }
   @include breakpoint(xlarge){
-    // margin-top: 57vh;
   }
 }
 
