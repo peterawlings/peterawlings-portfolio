@@ -1,0 +1,57 @@
+<header class="l-header" role="banner" id="top">
+  {{> top-bar}}
+</header>
+<main role="main">
+  <section class="l-section">
+    <div class="l-section__inner">
+      <h1 class="c-section__title c-section__title--main">Commercial Realestate</h1>
+      <h4 class="c-section__subtitle is-section-heading">Maintainable code and visual consistency across the user interface.</h4>
+      <img class="content__img"
+        src="assets/img/cre-devices-full.png"
+        srcset="assets/img/cre-devices-full-small.png 530w,
+                assets/img/cre-devices-full.png 1082w"
+        alt="Commercial Realestate">
+      <div class="content__section">
+        <p class="content__text">I was the sole front-end developer working closely with a highly talented team of developers, product owners, UX and design. Paying particular attention to mobile devices, I completely rebuilt some complex elements and entire pages, bringing them to life across a wide range of device sizes. During my employment, the site experienced:</p>
+        <ul>
+          <li>a 400% increase in session per month</li>
+          <li>a 600% increase in session to mobile during that period</li>
+          <li>71% improvement to bounce rate for the same period</li>
+        </ul>
+      </div>
+      <div class="content__img-wrap">
+        <div class="content__img-container">
+          <picture>
+            <source media="(max-width: 574px)" srcset="assets/img/cre-agent-small.jpg">
+            <source media="(max-width: 734px)" srcset="assets/img/cre-agent.jpg">
+            <img src="assets/img/cre-agent.jpg" alt="Commercial Realestate agent profile">
+          </picture>
+        </div>
+        <div class="content__img-container">
+          <img src="assets/img/cre-mobile-search.jpg" alt="Commercial Realestate mobile search">
+        </div>
+      </div>
+
+      <div class="content__section">
+        <h2 class="h2 c-section__title--main c-section__title--secondary">Architecture</h2>
+        <p class="content__text">I was tasked with cleaning up the front end and creating a maintainable and flexible architecture. My objective was to create an architecture that was well documented with guidelines that could be easily followed. I also wanted to create a consistency across the UI of the site by taking a more reusable, modular approach to the components used throughout. </p>
+        <p class="content__text">Implementing front-end tooling was a key part of the strategy. Using SASS and Gulp, I structured the CSS in a more workable way using an approach based on Atomic, BEM and SMACSS methodologies. I was able to take  advantage of SASS features to standardise elements like colours and breakpoints across the site. </p>
+      </div>
+      <div class="content__img-wrap">
+        <div class="content__img-container">
+          <img src="assets/img/cre-code-1.jpg" alt="SASS structure">
+        </div>
+        <div class="content__img-container">
+          <img src="assets/img/cre-code-2.jpg" alt="SASS structure">
+        </div>
+      </div>
+    </div>
+  </section>
+  <aside class="c-callout">
+    <a href="localhost:8000/#contact" class="btn-primary">
+      <span>Contact me</span>
+    </a>
+    <p class="c-callout__text">Get in touch and let's work together</p>
+  </aside>
+</main>
+{{> footer}}

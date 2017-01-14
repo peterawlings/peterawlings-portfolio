@@ -1,0 +1,52 @@
+// Config
+
+// Base
+// TODO - move includes to top
+.blockquote-main {
+  position: relative;
+  font-family: $body-font-family;
+  font-size: rem-calc(18);
+  font-weight: $global-weight-light;
+  line-height: 1.7;
+  margin-bottom: 0;
+  color: $medium-gray;
+  @include reveal($single: true);
+  @include clearfix;
+  @include margin-center;
+  @include breakpoint(large) {
+    max-width: 740px;
+    line-height: $global-lineheight-larger;
+  }
+  @include breakpoint(large down) {
+    padding-left: 50px;
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -30px;
+    height: 40px;
+    width: 40px;
+    background: url(../img/quote.svg) top left no-repeat;
+    background-size: contain;
+    display: block;
+    transform: rotateZ(180deg);
+  }
+}
+
+.cite {
+  float: right;
+  line-height: 23px;
+  margin-top: 20px;
+  font-size: $blockquote-fontsize;
+  color: $medium-gray;
+  &:before {
+    content: "";
+  }
+  &__name {
+    color: $primary-color;
+  }
+  &__title {
+    font-weight: bold;
+  }
+}

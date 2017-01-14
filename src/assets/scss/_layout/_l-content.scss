@@ -1,0 +1,39 @@
+// Config
+%content-section {
+  @include margin-center;
+  max-width: rem-calc(830);
+  margin-bottom: $global-margin-larger;
+}
+
+// Base
+.content {
+  &__section {
+    @extend %content-section;
+  }
+  &__img {
+    margin-bottom: $global-margin-larger;
+  }
+  &__text {
+    text-align: justify;
+  }
+  &__img-wrap {
+    @extend %content-section;
+    @include flex-grid-row();
+    justify-content: center;
+    @include breakpoint(large) {
+      justify-content: flex-start;
+      flex-wrap: nowrap;
+    }
+    > :first-child {
+      @include breakpoint(large) {
+        margin-right: $gutter;
+      }
+    }
+  }
+  &__img-container {
+    flex: 0 1 auto;
+    @include breakpoint(medium down) {
+      margin-bottom: $gutter;
+    }
+  }
+}
