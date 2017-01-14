@@ -34,5 +34,8 @@
     max-width: $bp-xlarge;
     margin-left: auto;
     margin-right: auto;
+    > *:last-child {
+      margin-bottom: 0;
+    }
   }
 }

@@ -1,37 +1,9 @@
 <header class="l-header has-image" role="banner" id="top">
   <section class="c-top-bar">
     <div class="c-logo sticky">
-      pete.rawlings.
+      <a href="{{root}}">pete.rawlings.</a>
     </div>
-    <div class="nav-toggle" data-js="nav-menu">
-      <div class="nav-icon">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <nav role="navigation" class="c-nav-container">
-        <div class="c-nav-list__wrap">
-          <ul class="c-nav-list">
-            <li><a href="#top">home</a></li>
-            <li><a href="#about">about</a></li>
-            <li><a href="#work">work</a></li>
-            <li><a href="#contact">contact</a></li>
-          </ul>
-          <ul class="c-social-links c-social-links__as-nav">
-            <li>
-              <a href="https://twitter.com/roolins">twitter</a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/pete-rawlings-bb106649">linkedin</a>
-            </li>
-            <li>
-              <a href="assets/docs/pete_rawlings_CV_2016.pdf" target="_blank">resume</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
+    {{> nav}}
   </section>
   <div class="a-ratio-content">
     <article class="c-hero-title">
@@ -147,11 +119,4 @@
 
   </section>
 </main>
-<footer class="l-footer" role="contentinfo">
-  <ul class="c-social-links c-social-links__as-nav c-social-links--footer">
-    <li><a href="#top">home</a></li>
-    <li><a href="#about">about</a></li>
-    <li><a href="#work">work</a></li>
-    <li><a href="#contact">contact</a></li>
-  </ul>
-</footer>
+{{> footer}}

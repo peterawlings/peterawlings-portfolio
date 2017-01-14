@@ -13,6 +13,9 @@
   &__img {
     margin-bottom: $global-margin-larger;
   }
+  &__text {
+    text-align: justify;
+  }
   &__img-wrap {
     @extend %content-section;
     @include flex-grid-row();
@@ -29,8 +32,8 @@
   }
   &__img-container {
     flex: 0 1 auto;
-    margin-bottom: $gutter;
-
+    @include breakpoint(medium down) {
+      margin-bottom: $gutter;
+    }
   }
-
 }

@@ -1,37 +1,9 @@
-<header class="l-header has-no-image" role="banner" id="top">
+<header class="l-header" role="banner" id="top">
   <section class="c-top-bar">
     <div class="c-logo sticky">
-      pete.rawlings.
+      <a href="{{root}}">pete.rawlings.</a>
     </div>
-    <div class="nav-toggle" data-js="nav-menu">
-      <div class="nav-icon">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <nav role="navigation" class="c-nav-container">
-        <div class="c-nav-list__wrap">
-          <ul class="c-nav-list">
-            <li><a href="#top">home</a></li>
-            <li><a href="#about">about</a></li>
-            <li><a href="#work">work</a></li>
-            <li><a href="#contact">contact</a></li>
-          </ul>
-          <ul class="c-social-links c-social-links__as-nav">
-            <li>
-              <a href="https://twitter.com/roolins">twitter</a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/pete-rawlings-bb106649">linkedin</a>
-            </li>
-            <li>
-              <a href="assets/docs/pete_rawlings_CV_2016.pdf" target="_blank">resume</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
+    {{> nav}}
   </section>
 </header>
 <main role="main">
@@ -45,7 +17,7 @@
                 assets/img/cre-devices-full.png 1082w"
         alt="Commercial Realestate">
       <div class="content__section">
-        <p>I was the sole front-end developer working closely with a highly talented team of developers, product owners, UX and design. Paying particular attention to mobile devices, I completely rebuilt some complex elements and entire pages, bringing them to life across a wide range of device sizes. During my employment, the site experienced:</p>
+        <p class="content__text">I was the sole front-end developer working closely with a highly talented team of developers, product owners, UX and design. Paying particular attention to mobile devices, I completely rebuilt some complex elements and entire pages, bringing them to life across a wide range of device sizes. During my employment, the site experienced:</p>
         <ul>
           <li>a 400% increase in session per month</li>
           <li>a 600% increase in session to mobile during that period</li>
@@ -67,21 +39,24 @@
 
       <div class="content__section">
         <h2 class="h2 c-section__title--main c-section__title--secondary">Architecture</h2>
-        <p>I was the sole front-end developer working closely with a highly talented team of developers, product owners, UX and design. Paying particular attention to mobile devices, I completely rebuilt some complex elements and entire pages, bringing them to life across a wide range of device sizes. During my employment, the site experienced:</p>
-        <ul>
-          <li>a 400% increase in session per month</li>
-          <li>a 600% increase in session to mobile during that period</li>
-          <li>71% improvement to bounce rate for the same period</li>
-        </ul>
+        <p class="content__text">I was tasked with cleaning up the front end and creating a maintainable and flexible architecture. My objective was to create an architecture that was well documented with guidelines that could be easily followed. I also wanted to create a consistency across the UI of the site by taking a more reusable, modular approach to the components used throughout. </p>
+        <p class="content__text">Implementing front-end tooling was a key part of the strategy. Using SASS and Gulp, I structured the CSS in a more workable way using an approach based on Atomic, BEM and SMACSS methodologies. I was able to take  advantage of SASS features to standardise elements like colours and breakpoints across the site. </p>
+      </div>
+      <div class="content__img-wrap">
+        <div class="content__img-container">
+          <img src="assets/img/cre-code-1.jpg" alt="SASS structure">
+        </div>
+        <div class="content__img-container">
+          <img src="assets/img/cre-code-2.jpg" alt="SASS structure">
+        </div>
       </div>
     </div>
   </section>
+  <aside class="c-callout">
+    <a href="localhost:8000/#contact" class="btn-primary">
+      <span>Contact me</span>
+    </a>
+    <p class="c-callout__text">Get in touch and let's work together</p>
+  </aside>
 </main>
-<footer class="l-footer" role="contentinfo">
-  <ul class="c-social-links c-social-links__as-nav c-social-links--footer">
-    <li><a href="#top">home</a></li>
-    <li><a href="#about">about</a></li>
-    <li><a href="#work">work</a></li>
-    <li><a href="#contact">contact</a></li>
-  </ul>
-</footer>
+{{> footer}}

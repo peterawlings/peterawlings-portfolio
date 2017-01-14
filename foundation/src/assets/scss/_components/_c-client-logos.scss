@@ -1,6 +1,7 @@
 // Config
 
 // Base
+// TODO - change to something more generic that can be used elsewhere as flexbox items
 .c-client-logos {
   align-items: center;
   @include flex-grid-row(nest);

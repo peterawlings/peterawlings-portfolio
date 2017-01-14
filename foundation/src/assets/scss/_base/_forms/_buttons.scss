@@ -8,7 +8,6 @@
   width: 100%;
   overflow: hidden;
   border: none;
-  display: block;
   @include breakpoint(medium) {
     // TODO fix this behaviour so it works across all button widths
     &:before {
