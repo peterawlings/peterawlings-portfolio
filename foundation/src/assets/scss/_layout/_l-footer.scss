@@ -1,0 +1,12 @@
+// Config
+
+// Base
+.l-footer {
+  background-color: $black;
+  margin: 0 auto;
+  padding: 20px 0;
+  &__inner {
+    max-width: rem-calc(1080);
+    margin: 0 auto;
+  }
+}

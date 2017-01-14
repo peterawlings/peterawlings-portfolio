@@ -1,0 +1,17 @@
+// Config
+
+
+// Base
+.c-logo {
+  position: relative;
+  top: 0;
+  color: $primary-color;
+  font-family: 'impact', sans-serif;
+  text-transform: uppercase;
+  float: left;
+  z-index: 20;
+  transition: top $transition-time-short $ease-out;
+  // .is-fixed & {
+  //   top: -10px;
+  // }
+}
