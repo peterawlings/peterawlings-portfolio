@@ -2,11 +2,17 @@
 
 .c-social-links {
   @include margin-center;
-  @include no-bullets;
+  list-style: none;
+  @include breakpoint(medium) {
+    margin-left: 0;
+  }
   li {
     display: inline-block;
     &:last-child {
       margin-right: 0;
+      a {
+        margin-right: 0;
+      }
       & :after {
         content: "";
         margin-left: 0;
@@ -34,9 +40,10 @@
     }
   }
   &--footer {
-    margin-top: 0;
+    margin: 0 auto 10px auto;
     @include breakpoint(medium) {
-      text-align: right;
+      margin-left: auto;
+      margin-right: 0;
     }
   }
 }

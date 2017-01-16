@@ -3,9 +3,9 @@
 // Base
 // TODO - change to something more generic that can be used elsewhere as flexbox items
 .c-client-logos {
-  align-items: center;
   @include flex-grid-row(nest);
   @include reveal($delay: 0.3s);
+  align-items: center;
   &__container {
     flex: 0 1 auto;
     padding: 0 10px;
@@ -20,9 +20,9 @@
 }
 
 .c-description {
+  @include reveal($delay: 0.2s);
   font-size: rem-calc(18);
   margin-bottom: rem-calc(55px);
-  @include reveal($delay: 0.2s);
   @include breakpoint(medium) {
     margin-bottom: rem-calc(65px);
     font-size: rem-calc($h3-fontsize-larger);

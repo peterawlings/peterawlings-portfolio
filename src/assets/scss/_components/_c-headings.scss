@@ -5,7 +5,6 @@ h4, .h4  {
 
 // Base
 %section-title {
-  // font-size: rem-calc($h1-fontsize-larger);
   line-height: 1;
   margin-bottom: 7px;
   text-align: center;
@@ -13,8 +12,8 @@ h4, .h4  {
 }
 
 .c-tagline {
-  margin-bottom: rem-calc(56);
   @include reveal();
+  margin-bottom: rem-calc(56);
   @include breakpoint(large) {
     margin-bottom: rem-calc(88);
   }

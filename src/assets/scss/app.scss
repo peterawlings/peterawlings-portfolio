@@ -6,6 +6,7 @@
 // utils
 // mixins-custom included in _foundation-base
 @import '_utils/_effects';
+@import '_utils/_variables';
 
 // base
 @import '_base/_forms/_buttons';
@@ -32,6 +33,7 @@
 @import '_components/_c-contact-form';
 @import '_components/_c-social-links';
 @import '_components/_c-callout';
+@import '_components/_c-browsehappy';
 
 
 // typography

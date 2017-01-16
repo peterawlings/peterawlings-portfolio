@@ -29,9 +29,9 @@
   line-height: 1.2;
   font-weight: bold;
   transform: translateY(0);
+  list-style: none;
   transition: transform 0.9s $ease-out $transition-time-short,
               opacity $transition-time-short $ease-out $transition-time-short;
-  @include no-bullets;
   .is-open & {
     visibility: visible;
     opacity: 1;
@@ -73,8 +73,8 @@
     }
   }
   &__wrap {
-    padding-bottom: rem-calc(30);
     @include clearfix;
+    padding-bottom: rem-calc(30);
     @include breakpoint(large) {
       width: 50%;
       float: right;

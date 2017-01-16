@@ -1,0 +1,4 @@
+// Additional global variables included after the main settings.scss file
+
+// Uses the calculated foundation spacing at different screen widths
+$section-sidespacing: rem-calc($-zf-bp-value) / 2;

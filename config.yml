@@ -66,6 +66,7 @@ PATHS:
     - "src/assets/js/plugins/picturefill.min.js"
     - "src/assets/js/namespace.js"
     - "src/assets/js/form.js"
+    - "src/assets/js/browsehappy.js"
     - "src/assets/js/navigation.js"
     - "src/assets/js/scroll.js"
     - "src/assets/js/waypoints.js"

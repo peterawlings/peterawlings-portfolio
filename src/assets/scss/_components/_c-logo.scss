@@ -3,16 +3,21 @@
 
 // Base
 .c-logo {
-  // TODO: display on ios
   position: relative;
   top: 0;
-  color: $primary-color;
-  // font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", "sans serif";
-  text-transform: uppercase;
+  width: 125px;
+  margin-left: auto;
+  margin-right: auto;
   float: left;
   z-index: 20;
   transition: top $transition-time-short $ease-out;
+  @include breakpoint(medium) {
+    margin-left: 0;
+  }
   .is-stuck & {
-    top: -8px;
+    top: -9px;
+  }
+  &--footer {
+    z-index: 0;
   }
 }

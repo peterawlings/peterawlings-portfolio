@@ -8,8 +8,9 @@
   width: 100%;
   overflow: hidden;
   border: none;
-  @include breakpoint(medium) {
-    // TODO fix this behaviour so it works across all button widths
+  margin-bottom: rem-calc(15);
+  @include breakpoint(large) {
+    margin-bottom: rem-calc(27);
     &:before {
       content: '';
       transform: rotateZ(70deg) translateY(-170px);

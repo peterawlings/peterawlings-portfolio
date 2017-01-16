@@ -1,0 +1,39 @@
+// Config
+
+
+// base
+.browser-msg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($dark-gray, 0.85);
+  z-index: 999;
+  color: $white;
+  text-align: center;
+  h3 {
+    @include absolute-center;
+  }
+  [data-js="browsehappy-close"] {
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    &:before,
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 50%;
+      width: 20px;
+      height: 2px;
+      background-color: $white;
+      transform: rotateZ(45deg);
+    }
+    &:after {
+      transform: rotateZ(-45deg);
+    }
+  }
+}

@@ -22,8 +22,8 @@
     }
   }
   &__img {
-    margin-bottom: rem-calc(60);
     @include reveal($delay: 0.5s);
+    margin-bottom: rem-calc(60);
     @include breakpoint(large) {
       margin-bottom: 0;
       margin-right: $gutter;
@@ -44,7 +44,10 @@
     }
   }
   &__button {
-    display: block;
+    display: block;  
+    @include breakpoint(large) {
+      display: inline-block;
+    }
   }
   &.has-img-right {
     flex-wrap: wrap-reverse;

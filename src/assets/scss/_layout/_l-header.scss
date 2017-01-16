@@ -4,7 +4,6 @@
 .l-header {
   height: 50px;
   &.has-image {
-    // @include aspect-ratio(72, 35);
     background: url(../img/hero-small.jpg) top left no-repeat;
     background-position: bottom center;
     background-size: cover;
