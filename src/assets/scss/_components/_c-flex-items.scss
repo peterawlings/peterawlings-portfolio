@@ -1,0 +1,19 @@
+// Config
+
+// Base
+.c-flex-items {
+  @include flex-grid-row(nest);
+  @include reveal($delay: 0.3s);
+  align-items: center;
+  &__container {
+    flex: 0 1 auto;
+    padding: 0 10px;
+    margin: 0 auto 20px auto;
+    @include breakpoint(medium) {
+      min-width: 160px;
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+}

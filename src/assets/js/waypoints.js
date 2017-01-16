@@ -8,29 +8,8 @@ portfolio.waypoints = (function () {
     var waypoints = $('[data-js="waypoint"]').waypoint(function(direction) {
       $(this.element).addClass('is-shown');
     },{
-      offset: '80%'
+      offset: '85%'
     })
-
-    // $topBar.waypoint(function(direction){
-    //   if (direction === 'up') {
-    //     console.log('up')
-    //     $topBar.toggleClass('is-fixed');
-    //   }
-    // })
-    // var waypoints = $('.c-top-bar').waypoint(function(direction) {
-    //   // console.log('scroll');
-    //   if (direction === 'up') {
-    //     $topBar.toggleClass('is-fixed');
-    //   }
-    // })
-    // var waypoints = $('main').waypoint(function(direction) {
-    //   // console.log('scroll');
-    //   if (direction === 'up') {
-    //     if ($('body').hasClass('page-home')) {
-    //       $topBar.toggleClass('has-alt');
-    //     }
-    //   }
-    // })
   };
 
   return {
