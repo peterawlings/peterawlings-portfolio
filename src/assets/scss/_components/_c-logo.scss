@@ -3,10 +3,11 @@
 
 // Base
 .c-logo {
+  // TODO: display on ios
   position: relative;
   top: 0;
   color: $primary-color;
-  font-family: 'impact', sans-serif;
+  // font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", "sans serif";
   text-transform: uppercase;
   float: left;
   z-index: 20;

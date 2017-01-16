@@ -2,7 +2,7 @@ portfolio.navigation = (function () {
   'use strict';
 
   // variables
-  var $navMenu   = $('[data-js="nav-menu"]');
+  var $navMenu   = $('[data-js="nav-menu"]').closest('.c-top-bar');
   var $navToggle = $navMenu.find('.nav-icon');
   var $body      = $('body');
   var $navLink  = $('.c-nav-list').find('a');
