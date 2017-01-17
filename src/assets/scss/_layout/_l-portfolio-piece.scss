@@ -44,9 +44,9 @@
     }
   }
   &__button {
-    display: block;  
+    display: block;
     @include breakpoint(large) {
-      display: inline-block;
+      display: table;
     }
   }
   &.has-img-right {

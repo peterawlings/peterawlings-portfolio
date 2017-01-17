@@ -11,3 +11,11 @@
     margin-bottom: 0;
   }
 }
+
+.c-callout-visit {
+  display: block;
+  text-align: center;
+  @include breakpoint(large) {
+    text-align: left;
+  }
+}

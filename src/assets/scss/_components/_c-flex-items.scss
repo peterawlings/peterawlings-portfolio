@@ -9,6 +9,7 @@
     flex: 0 1 auto;
     padding: 0 10px;
     margin: 0 auto 20px auto;
+    text-align: center;
     @include breakpoint(medium) {
       min-width: 160px;
       &:first-child {

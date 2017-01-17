@@ -12,6 +12,9 @@
   max-width: rem-calc(620);
   display: flex;
   flex-wrap: wrap;
+  button, ul {
+    margin-bottom: 0;
+  }
 }
 
 .c-form-thanks {

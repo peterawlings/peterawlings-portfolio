@@ -30,6 +30,9 @@
     background-size: contain;
     display: block;
     transform: rotateZ(180deg);
+    @include breakpoint(large down) {
+      left: 0;
+    }
   }
 }
 
