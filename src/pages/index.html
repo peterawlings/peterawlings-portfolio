@@ -79,7 +79,7 @@
   <section class="l-section--alt" id="contact">
     <h2 class="c-section__title">Contact</h2>
     <h4 class="c-section__subtitle is-section-heading">I’m always interested in hearing about new opportunties.<br>Currently available for work</h4>
-    <form class="c-contact-form" role="form" data-abide novalidate>
+    <form class="c-contact-form" id="form" role="form" method="post" data-abide novalidate>
       <div class="form-field">
         <label class="form-label" for="f-name">Name*</label>
         <input class="form-input" data-js="formInput" aria-label="name" type="text" id="f-name" required>
@@ -98,6 +98,8 @@
       <button type="submit" aria-label="send message" class="btn-primary btn-primary--right">
         <span>Send message</span>
       </button>
+      <input type="hidden" name="recipient" value="woohoo@pete-rawlings.com" />
+      <input type="hidden" name="subject" value="From the feedback form" />
       <ul class="c-social-links">
         <li>
           <a href="https://twitter.com/roolins">twitter</a>
