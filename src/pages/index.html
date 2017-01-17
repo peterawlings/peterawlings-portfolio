@@ -79,39 +79,45 @@
   <section class="l-section--alt" id="contact">
     <h2 class="c-section__title">Contact</h2>
     <h4 class="c-section__subtitle is-section-heading">I’m always interested in hearing about new opportunties.<br>Currently available for work</h4>
-    <form class="c-contact-form" id="form" role="form" method="post" data-abide novalidate>
-      <div class="form-field">
-        <label class="form-label" for="f-name">Name*</label>
-        <input class="form-input" data-js="formInput" aria-label="name" type="text" id="f-name" required>
-        <span class="form-error">This field is required</span>
+    <div class="c-form-container">
+      <form class="c-contact-form" id="form" role="form" method="post" data-abide novalidate>
+        <div class="form-field">
+          <label class="form-label" for="f-name">Name*</label>
+          <input class="form-input" data-js="formInput" aria-label="name" type="text" id="f-name" name="f-name" required>
+          <span class="form-error">This field is required</span>
+        </div>
+        <div class="form-field">
+          <label class="form-label" for="f-email">Email*</label>
+          <input class="form-input" data-js="formInput" aria-label="email" type="email" id="f-email" name="f-email" required>
+          <span class="form-error">Please enter a valid email address</span>
+        </div>
+        <div class="form-field">
+          <label class="form-label" aria-label="message" for="f-message">Message*</label>
+          <textarea class="form-input-msg" data-js="formInput" id="f-message" name="f-message" required></textarea>
+          <span class="form-error">This field is required</span>
+        </div>
+        <button type="submit" aria-label="send message" class="btn-primary btn-primary--right">
+          <span>Send message</span>
+        </button>
+        <input type="hidden" name="recipient" value="woohoo@pete-rawlings.com" />
+        <input type="hidden" name="subject" value="From the feedback form" />
+        <ul class="c-social-links">
+          <li>
+            <a href="https://twitter.com/roolins">twitter</a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/pete-rawlings-bb106649">linkedin</a>
+          </li>
+          <li>
+            <a href="assets/docs/pete_rawlings_CV_2016.pdf" target="_blank">resume</a>
+          </li>
+        </ul>
+      </form>
+      <div class="c-form-thanks">
+        <h2 class="c-form-thanks__title">Thanks!</h2>
+        <h3 class="c-form-thanks__sub-title">I will get back to you soon</h3>
       </div>
-      <div class="form-field">
-        <label class="form-label" for="f-email">Email*</label>
-        <input class="form-input" data-js="formInput" aria-label="email" type="email" id="f-email" required>
-        <span class="form-error">Please enter a valid email address</span>
-      </div>
-      <div class="form-field">
-        <label class="form-label" aria-label="message" for="f-message">Message*</label>
-        <textarea class="form-input-msg" data-js="formInput" id="f-message" required></textarea>
-        <span class="form-error">This field is required</span>
-      </div>
-      <button type="submit" aria-label="send message" class="btn-primary btn-primary--right">
-        <span>Send message</span>
-      </button>
-      <input type="hidden" name="recipient" value="woohoo@pete-rawlings.com" />
-      <input type="hidden" name="subject" value="From the feedback form" />
-      <ul class="c-social-links">
-        <li>
-          <a href="https://twitter.com/roolins">twitter</a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/pete-rawlings-bb106649">linkedin</a>
-        </li>
-        <li>
-          <a href="assets/docs/pete_rawlings_CV_2016.pdf" target="_blank">resume</a>
-        </li>
-      </ul>
-    </form>
+    </div>
 
   </section>
 </main>

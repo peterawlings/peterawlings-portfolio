@@ -3,6 +3,7 @@
 .c-social-links {
   @include margin-center;
   list-style: none;
+  align-self: flex-end;
   @include breakpoint(medium) {
     margin-left: 0;
   }

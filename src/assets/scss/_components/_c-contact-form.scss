@@ -2,10 +2,29 @@
 
 
 // Base
+.c-form-container {
+  height: 585px;
+}
+
 .c-contact-form {
   @include margin-center;
   @include clearfix;
-  max-width: 620px;
+  max-width: rem-calc(620);
   display: flex;
   flex-wrap: wrap;
+}
+
+.c-form-thanks {
+  display: none;
+  margin: auto;
+  text-align: center;
+  &__title {
+    color: get-color(primary);
+    font-size: 60px;
+    margin-bottom: 0;
+  }
+  &__sub-title {
+    font-size: 23px;
+    margin-bottom: rem-calc(120);
+  }
 }
