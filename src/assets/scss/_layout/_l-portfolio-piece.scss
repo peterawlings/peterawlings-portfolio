@@ -46,7 +46,7 @@
   &__button {
     display: block;
     @include breakpoint(large) {
-      display: table;
+      display: inline-block;;
     }
   }
   &.has-img-right {

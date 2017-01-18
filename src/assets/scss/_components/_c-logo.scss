@@ -11,6 +11,9 @@
   float: left;
   z-index: 20;
   transition: top $transition-time-short $ease-out;
+  a {
+    display: block;
+  }
   @include breakpoint(medium) {
     margin-left: 0;
   }

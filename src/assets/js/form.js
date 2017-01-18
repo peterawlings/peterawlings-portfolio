@@ -19,30 +19,25 @@ portfolio.form = (function () {
       }
     }
 
-    // TODO - fix this form shit
     $form
     .on("formvalid.zf.abide", function(ev,frm) {
-      console.log("Form id "+frm.attr('id')+" is valid");
       $.ajax({
         type: 'POST',
-        data: $(form).serialize(), // $(form) is ok here
+        data: $(form).serialize(),
         url: 'http://pete-rawlings.com/cgi-bin/mail.pl',
         success: function(){
           ev.preventDefault();
-          console.log('yes');
           $form.fadeOut(300).delay(2600).fadeIn(300);
           $formThanks.delay(310).fadeIn(300).delay(2000).fadeOut(300);
           $formInput.val("");
         },
         error: function(XMLHttpRequest, textStatus, errorThrown) {
           ev.preventDefault();
-          console.log('no');
         }
       });
     })
     .on("submit", function(ev) {
       ev.preventDefault();
-      console.log("Submit for form id "+ev.target.id+" intercepted");
     });
   };
   return {
