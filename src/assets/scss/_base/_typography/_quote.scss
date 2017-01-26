@@ -11,7 +11,7 @@
   font-size: rem-calc(18);
   font-weight: $global-weight-light;
   line-height: 1.7;
-  color: $medium-gray;
+  color: darken($medium-gray, 8%);
   @include breakpoint(large) {
     max-width: 740px;
     line-height: $global-lineheight-larger;
@@ -41,7 +41,7 @@
   line-height: 23px;
   margin-top: 20px;
   font-size: $blockquote-fontsize;
-  color: $medium-gray;
+  color: darken($medium-gray, 8%);
   &:before {
     content: "";
   }
