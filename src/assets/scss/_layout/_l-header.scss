@@ -4,10 +4,13 @@
 .l-header {
   height: 50px;
   &.has-image {
-    background: url(../img/hero-tshirt-small.jpg) top left no-repeat;
+    background: url(../img/hero-tshirt-smaller.jpg) top left no-repeat;
     background-position: bottom center;
     background-size: cover;
     min-height: 300px;
+    @include breakpoint(500px) {
+      background-image: url(../img/hero-tshirt-small.jpg);
+    }
     @include breakpoint(large) {
       background-position: bottom left;
       background-image: url(../img/hero-tshirt.jpg);
