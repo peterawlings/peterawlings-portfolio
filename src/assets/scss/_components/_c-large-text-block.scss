@@ -4,14 +4,23 @@
 .c-large-text-block {
   @include reveal($delay: 0.2s);
   font-size: rem-calc(18);
-  margin-bottom: rem-calc(55px);
+  margin-bottom: rem-calc(25px);
   @include breakpoint(medium) {
-    margin-bottom: rem-calc(65px);
+    margin-bottom: rem-calc(35px);
     font-size: rem-calc($h3-fontsize-larger);
   }
   @include breakpoint(large) {
-    margin-bottom: rem-calc(95px);
+    margin-bottom: rem-calc(45px);
     font-size: rem-calc($h3-fontsize-larger);
+  }
+  &.is-last {
+    margin-bottom: rem-calc(55px);
+    @include breakpoint(medium) {
+      margin-bottom: rem-calc(65px);
+    }
+    @include breakpoint(large) {
+      margin-bottom: rem-calc(95px);
+    }
   }
   & + .c-flex-items {
      margin-bottom: -20px;
