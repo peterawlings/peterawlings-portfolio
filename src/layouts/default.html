@@ -18,14 +18,17 @@
     <meta name="application-name" content="&nbsp;"/>
     <meta name="msapplication-TileColor" content="#FFFFFF" />
     <meta name="msapplication-TileImage" content="mstile-144x144.png" />
+    <meta name="description" content="Pete Rawlings, Front End Developer living in Sydney. I craft simple, effective and user-centric web solutions."/>
     <link rel="stylesheet" href="{{root}}assets/css/app.css">
     <script src="https://use.typekit.net/eao0suc.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
   </head>
   {{#ifpage 'index'}}
   <body class="page-home">
-  {{/ifpage}}
+    {{/ifpage}}
+  {{#unlesspage 'index'}}
   <body>
+  {{/unlesspage}}
       <!--[if IE]>
       <div class="browser-msg">
         <h3>Hi, you are using an outdated browser. This site also uses modern features to display properly. Please <a href="http://browsehappy.com/?locale=en">upgrade your browser here</a> and experience a safer web in all it's glory. Thanks.
