@@ -26,6 +26,7 @@ h4, .h4  {
 
 .c-section__title {
   @extend %section-title;
+  @include reveal($single: true);
   &--main {
     @extend %section-title;
     text-transform: uppercase;
@@ -41,7 +42,13 @@ h4, .h4  {
   }
 }
 
+.c-section__skills {
+  line-height: 1.8;
+  text-transform: uppercase;
+}
+
 .c-section__subtitle {
+  @include reveal($single: true);
   font-size: rem-calc($h4-fontsize);
   text-align: center;
   &:after {

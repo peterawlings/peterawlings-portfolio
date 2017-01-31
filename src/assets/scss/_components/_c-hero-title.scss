@@ -21,9 +21,9 @@
   text-align: left;
 }
 .c-hero-title__subtitle {
-  font-size: rem-calc($h3-fontsize);
   font-weight: normal;
   color: $white;
+  font-size: rem-calc(18);
   &:after {
     @include separator($primary-color, 75px);
   }

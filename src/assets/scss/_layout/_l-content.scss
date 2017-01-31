@@ -9,11 +9,18 @@
 .content {
   &__section {
     @extend %content-section;
+    @include reveal($single: true);
   }
   &__img {
     margin-bottom: $global-margin-larger;
+    &--center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
   &__text {
+    @include reveal($single: true);
     text-align: justify;
   }
   &__img-wrap {
