@@ -17,5 +17,8 @@
   text-align: center;
   @include breakpoint(large) {
     text-align: left;
+    .has-img-right & {
+      text-align: right;
+    }
   }
 }

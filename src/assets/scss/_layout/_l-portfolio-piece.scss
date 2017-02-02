@@ -19,6 +19,9 @@
     @include breakpoint(large) {
       flex: 1 1 0;
       align-self: center;
+      .has-img-right & {
+        text-align: right;
+      }
     }
   }
   &__img {
@@ -46,7 +49,7 @@
   &__button {
     display: block;
     @include breakpoint(large) {
-      display: inline-block;;
+      display: inline-block;
     }
   }
   &.has-img-right {

@@ -9,19 +9,16 @@
 .content {
   &__section {
     @extend %content-section;
-    @include reveal($single: true);
   }
   &__img {
     margin-bottom: $global-margin-larger;
-    &--center {
+    &--profile {
       display: block;
       margin-left: auto;
       margin-right: auto;
+      box-shadow: 0px 0px 55px -1px rgba(0,0,0,0.25);
+      border-radius: 50%;
     }
-  }
-  &__text {
-    @include reveal($single: true);
-    text-align: justify;
   }
   &__img-wrap {
     @extend %content-section;

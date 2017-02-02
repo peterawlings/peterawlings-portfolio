@@ -26,7 +26,6 @@ h4, .h4  {
 
 .c-section__title {
   @extend %section-title;
-  @include reveal($single: true);
   &--main {
     @extend %section-title;
     text-transform: uppercase;
@@ -40,15 +39,25 @@ h4, .h4  {
       text-align: left;
     }
   }
+  .has-img-right & {
+    @include breakpoint(large) {
+      text-align: right;
+    }
+  }
 }
 
-.c-section__skills {
-  line-height: 1.8;
-  text-transform: uppercase;
+.c-skills {
+  &__title {
+    @include reveal($single: true);
+    line-height: 1.8;
+    text-transform: uppercase;
+  }
+  &__subtitle {
+    @include reveal($single: true);
+  }
 }
 
 .c-section__subtitle {
-  @include reveal($single: true);
   font-size: rem-calc($h4-fontsize);
   text-align: center;
   &:after {
@@ -61,10 +70,19 @@ h4, .h4  {
       text-align: left;
       &:after {
         margin-left: 0;
+        .has-img-right & {
+          margin-right: 0;
+          margin-left: auto;
+        }
       }
     }
   }
   &.is-section-heading {
     margin-bottom: $global-margin-larger;
+  }
+  .has-img-right & {
+    @include breakpoint(large) {
+      text-align: right;
+    }
   }
 }

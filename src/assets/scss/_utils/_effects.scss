@@ -17,3 +17,7 @@ $transition-time-longer: 0.7s;
     opacity: 1;
   }
 }
+
+.waypoint-fade {
+  @include reveal($single: true);  
+}

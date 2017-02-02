@@ -31,3 +31,7 @@ $f-input-padding: rem-calc(29) rem-calc(10);
     height: 300px;
   }
 }
+
+.c-form-container {
+  @include reveal($single: true);
+}
