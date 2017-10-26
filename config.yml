@@ -71,3 +71,4 @@ PATHS:
     - "src/assets/js/scroll.js"
     - "src/assets/js/waypoints.js"
     - "src/assets/js/main.js"
+    - "src/assets/js/loading.js"

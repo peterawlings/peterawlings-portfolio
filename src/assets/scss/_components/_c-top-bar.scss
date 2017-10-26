@@ -5,6 +5,11 @@
 
 // base
 .c-top-bar {
+  opacity: 0;
+  transition: all $transition-time-longer $ease-out-slow $transition-delay;
+  .loaded & {
+    opacity: 1;
+  }
   &__inner {
     z-index: 10;
     width: 100%;

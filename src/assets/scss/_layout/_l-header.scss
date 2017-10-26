@@ -8,6 +8,11 @@
     background-position: bottom center;
     background-size: cover;
     min-height: 300px;
+    opacity: 0;
+    transition: opacity $transition-time-longer $ease-out-slow;
+    .loaded & {
+      opacity: 1;
+    }
     @include breakpoint(500px) {
       background-image: url(../img/hero-tshirt-small.jpg);
     }

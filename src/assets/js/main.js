@@ -4,4 +4,5 @@ $(function(){
   portfolio.browsehappy.init();
   portfolio.waypoints.init();
   portfolio.scroll.init();
+  portfolio.loading.init();
 });

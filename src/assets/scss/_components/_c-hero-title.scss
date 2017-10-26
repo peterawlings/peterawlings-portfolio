@@ -5,12 +5,15 @@
   margin-left: rem-calc(30);
   position: absolute;
   top: 120px;
+  opacity: 0;
+  transition: all $transition-time-longer $ease-out-slow $transition-delay;
   @include breakpoint(large) {
     top: 54.5%;
     right: 0;
     margin-right: 13vw;
   }
-  @include breakpoint(xlarge){
+  .loaded & {
+    opacity: 1;
   }
 }
 
@@ -19,12 +22,25 @@
   color: $white;
   margin-bottom: 11px;
   text-align: left;
+  transform: translateY(-10px);
+  transition: transform $transition-time-longer $ease-out-slow $transition-delay;
+  .loaded & {
+    transform: translateY(0)
+  }
 }
+
 .c-hero-title__subtitle {
   font-weight: normal;
   color: $white;
   font-size: rem-calc(18);
   &:after {
-    @include separator($primary-color, 75px);
+    @include separator($primary-color, 25px, $dist: 30px);
+    opacity: 0;
+    .loaded & {
+      opacity: 1;
+      margin-top: 16px;
+      width: 75px;
+      transition: all $transition-time-longer $ease-out-slow $transition-delay;
+    }
   }
 }
